@@ -183,7 +183,7 @@ You will get a popup prompting you to set the type of the connection, and give i
 You'll see a new method in your `ViewController` definition:
 
 ```swift
-@IBAction func helloWorld(_ sender: AnyObject) {
+@IBAction func helloWorld(_ sender: Any) {
 }
 ```
 
@@ -210,7 +210,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var textDisplay: UILabel!
 
-    @IBAction func helloWorld(_ sender: AnyObject) {
+    @IBAction func helloWorld(_ sender: Any) {
         print("Pressed Hello World button")
         textDisplay.text = "Hello, world!"
     }
@@ -250,17 +250,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var textDisplay: UILabel!
 
-    @IBAction func helloWorld(_ sender: AnyObject) {
+    @IBAction func helloWorld(_ sender: Any) {
         print("Pressed Hello World button")
         textDisplay.text = "Hello, world!"
     }
 
-    @IBAction func goodbyeWorld(_ sender: AnyObject) {
+    @IBAction func goodbyeWorld(_ sender: Any) {
         print("Pressed Goodbye World button")
         textDisplay.text = "Goodbye, world!"
     }
 
-    @IBAction func unicorn(_ sender: AnyObject) {
+    @IBAction func unicorn(_ sender: Any) {
         print("Pressed Unicorn! button")
         textDisplay.text = "x"
     }
